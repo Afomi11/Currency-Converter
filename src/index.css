@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ffd3e9, #fcc2d0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure full viewport height */
+}
+
+/* Title styles */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
+/* Error message styles */
+.error-message {
+  color: red;
+  text-align: center;
+}
+
+/* Input container styles */
+.input-container {
+  display: flex;
+  flex-direction: row; /* Arrange items horizontally */
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Center items vertically */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Flex container for currency selectors */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Input field styles */
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Currency selector styles */
+select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 150px;
+}
+
+/* Conversion result styles */
+.conversion-result {
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Converted amount text styles */
+.converted-amount {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+/* App.css */
+
+/* Add a pink box shadow */
+.shadow-pink-box {
+  box-shadow: 0 4px 15px rgba(248, 67, 157, 0.5); /* Pink shadow */
+}
+
+.custom-box {
+  width: 600px;  /* Base width */
+  height: 300px; /* Base height */
+  padding: 40px;  /* Adjust padding for aesthetics */
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(255, 105, 180, 0.4); /* Pink shadow */
+  text-align: center;
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+
+/* Optional: Add hover effect */
+.custom-box:hover {
+  box-shadow: 0 15px 30px rgba(255, 105, 180, 0.5); /* Darker pink shadow on hover */
+}
+
+
+@media (max-width: 768px) {
+  .custom-box {
+    width: 90%;  /* Adjust width for tablets */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 30px; /* Less padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-box {
+    width: 95%;  /* Adjust width for mobile */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 20px; /* Less padding for smaller screens */
+  }
+}
